@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+
+  p How to connect resource
+
+  p RESTful Function (GET)
+    li "/allfood"    => Query all food
+    li "/food/:id?" => Query food by id
+    li "/CaloriesLessThan/:Calories?" => Query food that calories less than ...
+    li "/selectFoodType/:Type?" => Query food by Type
+  p RESTful Function (POST)
+    li "/addfood"    => Add food to Database
+  p RESTful Function (PUT)
+    li "/food/:id" => Edit food data by id
+  p RESTful Function (DELETE)
+    li "delete/food" => Delete food by id
